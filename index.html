@@ -81,9 +81,9 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>##美团面试算法题<br>@(学习总结)[Java]</p>
+        <p>##美团面试算法题</p>
 <p>###求一个数的平方根</p>
-<figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">Solution</span> &#123;</span></span><br><span class="line"><span class="keyword">public</span>:</span><br><span class="line">    <span class="function"><span class="keyword">int</span> <span class="title">sqrt</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (<span class="number">0</span> == x) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">        <span class="keyword">int</span> left = <span class="number">1</span>, right = x, ans;</span><br><span class="line">        <span class="keyword">while</span> (left &lt;= right) &#123;</span><br><span class="line">            <span class="keyword">int</span> mid = left + (right - left) / <span class="number">2</span>;</span><br><span class="line">            <span class="keyword">if</span> (mid &lt;= x / mid) &#123;</span><br><span class="line">                left = mid + <span class="number">1</span>;</span><br><span class="line">                ans = mid;</span><br><span class="line">            &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">                right = mid - <span class="number">1</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">class Solution &#123;</span><br><span class="line">public:</span><br><span class="line">    int sqrt(int x) &#123;</span><br><span class="line">        if (0 == x) return 0;</span><br><span class="line">        int left = 1, right = x, ans;</span><br><span class="line">        while (left &lt;= right) &#123;</span><br><span class="line">            int mid = left + (right - left) / 2;</span><br><span class="line">            if (mid &lt;= x / mid) &#123;</span><br><span class="line">                left = mid + 1;</span><br><span class="line">                ans = mid;</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                right = mid - 1;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return ans;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
 <p>###A的B次方</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">public class Solution &#123;</span><br><span class="line">	public double pow(double x, int n) &#123;</span><br><span class="line">		if (n == 0)</span><br><span class="line">			return 1;</span><br><span class="line">		if (n &lt; 0) &#123;</span><br><span class="line">			n = -n;</span><br><span class="line">			x = 1 / x;</span><br><span class="line">		&#125;</span><br><span class="line">		return (n % 2 == 0) ? pow(x * x, n / 2) : x * pow(x * x, n / 2);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>###判断一棵树是另一颗树的子树</p>
@@ -122,7 +122,7 @@ CreateSearchTree(int* array, int length)
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/13/美团面试算法题/" data-id="cj9y688ej00017gfxagg4zhds" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/11/13/美团面试算法题/" data-id="cj9y75s2d0002ggfxz0ac3w7u" class="article-share-link">Share</a>
       
       
     </footer>
@@ -158,7 +158,7 @@ CreateSearchTree(int* array, int length)
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/13/myfirst/" data-id="cj9y688ea00007gfxbuk0fmm5" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/11/13/myfirst/" data-id="cj9y75s290001ggfxtp5w4q8n" class="article-share-link">Share</a>
       
       
     </footer>
@@ -203,7 +203,7 @@ CreateSearchTree(int* array, int length)
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2017/11/13/hello-world/" data-id="cj9y688eo00027gfx4dpp7s0s" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2017/11/13/hello-world/" data-id="cj9y75s1z0000ggfxgn2k0mw1" class="article-share-link">Share</a>
       
       
     </footer>
