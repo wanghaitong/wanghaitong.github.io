@@ -159,74 +159,27 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-second" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-美团面试常见算法题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/13/second/">second</a>
+      <a class="article-title" href="/2017/11/14/美团面试常见算法题/">美团面试常见算法题</a>
     </h1>
   
 
         
-        <a href="/2017/11/13/second/" class="archive-article-date">
-  	<time datetime="2017-11-13T13:40:49.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-13</time>
+        <a href="/2017/11/14/美团面试常见算法题/" class="archive-article-date">
+  	<time datetime="2017-11-14T02:09:37.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-14</time>
 </a>
         
       </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/13/second/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-美团面试算法题" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="美团面试算法题总结"><a href="#美团面试算法题总结" class="headerlink" title="美团面试算法题总结"></a>美团面试算法题总结</h2><h3 id="求一个数的平方根"><a href="#求一个数的平方根" class="headerlink" title="求一个数的平方根"></a>求一个数的平方根</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">sqrt</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="number">0</span> == x) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> left = <span class="number">1</span>, right = x, ans;</span><br><span class="line">    <span class="keyword">while</span> (left &lt;= right) &#123;</span><br><span class="line">        <span class="keyword">int</span> mid = left + (right - left) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span> (mid &lt;= x / mid) &#123;</span><br><span class="line">            left = mid + <span class="number">1</span>;</span><br><span class="line">            ans = mid;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            right = mid - <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+        <h3 id="求一个数的平方根"><a href="#求一个数的平方根" class="headerlink" title="求一个数的平方根"></a>求一个数的平方根</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">sqrt</span><span class="params">(<span class="keyword">int</span> x)</span> </span>&#123;</span><br><span class="line">    <span class="keyword">if</span> (<span class="number">0</span> == x) <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">    <span class="keyword">int</span> left = <span class="number">1</span>, right = x, ans;</span><br><span class="line">    <span class="keyword">while</span> (left &lt;= right) &#123;</span><br><span class="line">        <span class="keyword">int</span> mid = left + (right - left) / <span class="number">2</span>;</span><br><span class="line">        <span class="keyword">if</span> (mid &lt;= x / mid) &#123;</span><br><span class="line">            left = mid + <span class="number">1</span>;</span><br><span class="line">            ans = mid;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            right = mid - <span class="number">1</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> ans;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="A的B次方"><a href="#A的B次方" class="headerlink" title="A的B次方"></a>A的B次方</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">double</span> <span class="title">pow</span><span class="params">(<span class="keyword">double</span> x, <span class="keyword">int</span> n)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (n == <span class="number">0</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="number">1</span>;</span><br><span class="line">		<span class="keyword">if</span> (n &lt; <span class="number">0</span>) &#123;</span><br><span class="line">			n = -n;</span><br><span class="line">			x = <span class="number">1</span> / x;</span><br><span class="line">		&#125;</span><br><span class="line">		<span class="keyword">return</span> (n % <span class="number">2</span> == <span class="number">0</span>) ? pow(x * x, n / <span class="number">2</span>) : x * pow(x * x, n / <span class="number">2</span>);</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="判断一棵树是另一颗树的子树"><a href="#判断一棵树是另一颗树的子树" class="headerlink" title="判断一棵树是另一颗树的子树"></a>判断一棵树是另一颗树的子树</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Solution</span> </span>&#123;</span><br><span class="line">	<span class="function"><span class="keyword">public</span> <span class="keyword">boolean</span> <span class="title">isSubtree</span><span class="params">(TreeNode s, TreeNode t)</span> </span>&#123;</span><br><span class="line">		<span class="keyword">if</span> (s == <span class="keyword">null</span>)</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">		<span class="keyword">if</span> (isSame(s, t))</span><br><span class="line">			<span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">		<span class="keyword">return</span> isSubtree(s.left, t) || isSubtree(s.right, t);</span><br><span class="line">	&#125;</span><br><span class="line"></span><br><span class="line">	<span class="function"><span class="keyword">private</span> <span class="keyword">boolean</span> <span class="title">isSame</span><span class="params">(TreeNode s, TreeNode t)</span> </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (s == <span class="keyword">null</span> &amp;&amp; t == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        <span class="keyword">if</span> (s == <span class="keyword">null</span> || t == <span class="keyword">null</span>) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (s.val != t.val) <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> isSame(s.left, t.left) &amp;&amp; isSame(s.right, t.right);</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
 <h3 id="前序非递归遍历"><a href="#前序非递归遍历" class="headerlink" title="前序非递归遍历"></a>前序非递归遍历</h3><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">preOrder2</span><span class="params">(BinTree t)</span> </span>&#123;    </span><br><span class="line">    Stack&lt;BinTree&gt; s = <span class="keyword">new</span> Stack&lt;BinTree&gt;();    </span><br><span class="line">    BinTree p = t;</span><br><span class="line">    <span class="keyword">while</span> (p != <span class="keyword">null</span> || !s.empty()) &#123;    </span><br><span class="line">            <span class="keyword">if</span> (p != <span class="keyword">null</span>) &#123;    </span><br><span class="line">                System.out.print(p.data);    </span><br><span class="line">                s.push(p);    </span><br><span class="line">                p = p.lchild;    </span><br><span class="line">            &#125;    </span><br><span class="line">            <span class="keyword">else</span> &#123;    </span><br><span class="line">            p = s.pop();    </span><br><span class="line">            p = p.rchild;    </span><br><span class="line">            &#125;    </span><br><span class="line">        &#125;    </span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
@@ -246,73 +199,22 @@
     <div class="article-info article-info-index">
       
       
+	<div class="article-tag tagcloud">
+		<i class="icon-price-tags icon"></i>
+		<ul class="article-tag-list">
+			 
+        		<li class="article-tag-list-item">
+        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">面试总结</a>
+        		</li>
+      		
+		</ul>
+	</div>
+
       
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/13/美团面试算法题/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-<aside class="wrap-side-operation">
-    <div class="mod-side-operation">
-        
-        <div class="jump-container" id="js-jump-container" style="display:none;">
-            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
-                <i class="icon-font icon-back"></i>
-            </a>
-            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
-                <i class="icon-font icon-plane jump-plane"></i>
-            </div>
-        </div>
-        
-        
-    </div>
-</aside>
-
-
-
-
-  
-    <article id="post-myfirst" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/11/13/myfirst/">myfirst</a>
-    </h1>
-  
-
-        
-        <a href="/2017/11/13/myfirst/" class="archive-article-date">
-  	<time datetime="2017-11-13T12:32:45.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-11-13</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/11/13/myfirst/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/11/14/美团面试常见算法题/">展开全文 >></a>
         </p>
       
 
@@ -504,6 +406,10 @@ getOwnMetadataKeys:function(t){return o(i(t),arguments.length<2?void 0:u(argumen
             <input type="checkbox" q-on="click:toggleTag(e)" q-attr="checked:showTags">
           </label>
           <ul class="article-tag-list" q-show="showTags">
+             
+              <li class="article-tag-list-item">
+                <a href="javascript:void(0)" class="js-tag color5">面试总结</a>
+              </li>
             
             <div class="clearfix"></div>
           </ul>
